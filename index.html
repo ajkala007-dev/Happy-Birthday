@@ -37,5 +37,23 @@
     </p>
     <p>💖 From me to you 💖</p>
   </div>
-</body>
+</body><!-- Confetti Script -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script>
+  function launchConfetti() {
+    confetti({
+      particleCount: 150,
+      spread: 70,
+      origin: { y: 0.6 }
+    });
+  }
+
+  // Launch when page loads
+  launchConfetti();
+
+  // Repeat every 3 seconds
+  setInterval(launchConfetti, 3000);
+</script>
+
 </html>
